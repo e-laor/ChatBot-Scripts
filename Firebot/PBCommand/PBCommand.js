@@ -90,6 +90,6 @@ exports.getScriptManifest = () => ({
   name: 'PB Command',
   description: 'PB command for season leaderboards',
   author: 'Cyber_1',
-  version: '1.0',
+  version: '1.1',
   website: 'https://www.twitch.tv/cyber_1',
 });
