@@ -8,7 +8,7 @@ Make sure to set up a conditional effect in the following order:
 - Add Conditional Effects as follows:
   **If any of the following conditions pass**
 
-  1. Condition #1 -
+  1. **Condition 1**
 
      ```
      TYPE: Command Args Count
@@ -16,7 +16,7 @@ Make sure to set up a conditional effect in the following order:
      EXPECTED VALUE: 1
      ```
 
-  2. Condition #2 -
+  2. **Condition 2**
      ```
      TYPE: Custom $arg[1]
      COMPARATOR: does not match regex
