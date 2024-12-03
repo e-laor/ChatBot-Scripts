@@ -2,6 +2,7 @@ const s1 = 'xqk38ky1';
 const s2 = '9qjkjp01';
 const s3 = 'zqo4zxp1';
 const s4 = 'qox8992q';
+const s5 = '1gne2vol';
 
 // Function to get season ID
 const getSeasonId = (season) => {
@@ -14,6 +15,8 @@ const getSeasonId = (season) => {
       return s3;
     case 's4':
       return s4;
+    case 's5':
+      return s5;
     default:
       return s1;
   }
