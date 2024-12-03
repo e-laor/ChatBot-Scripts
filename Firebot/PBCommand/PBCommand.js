@@ -38,7 +38,7 @@ const findRunPlaceByPlayerId = (data, id) => {
   return run ? run.place : null;
 };
 // Function to format run information
-const runInfo = (time) => `${time}`;
+const runInfo = (place, time) => `${place}. ${time}`;
 
 // Function to fetch data from API
 const fetchDataAPI = async (seasonId, logger) => {
@@ -54,7 +54,7 @@ const fetchDataAPI = async (seasonId, logger) => {
     }
     const time = computeTime(data.data.runs[PBRun - 1].run.times.primary_t);
     logger.info(time);
-    return runInfo(time);
+    return runInfo(PBRun, time);
   } catch (error) {
     logger.info('Error fetching data:', error);
     throw error;
