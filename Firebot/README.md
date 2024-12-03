@@ -1,6 +1,9 @@
 # Custom Scripts for Firebot
+I will try to explain how to set up each of the scripts.
+<br><br><br><br>
 
-## WRCommand
+
+## <u>WRCommand</u>
 
 Make sure to set up a conditional effect in the following order:
 
