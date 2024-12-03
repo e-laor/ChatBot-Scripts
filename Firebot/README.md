@@ -8,15 +8,20 @@ Make sure to set up a conditional effect in the following order:
 - Add Conditional Effects as follows:
   **If any of the following conditions pass**
 
-  1. Condition #1
-     `TYPE: Command Args Count`
-     `COMPARATOR: is less than`
-     `EXPECTED VALUE` **1**
+  1. Condition #1 -
 
-  2. Condition #2
-     `TYPE: Custom`**$arg[1]**
-     `COMPARATOR: does not match regex`
-     `EXPECTED VALUE` **\b(s[1-5])\b**
+     ```
+     TYPE: Command Args Count
+     COMPARATOR: is less than
+     EXPECTED VALUE: 1
+     ```
+
+  2. Condition #2 -
+     ```
+     TYPE: Custom $arg[1]
+     COMPARATOR: does not match regex
+     EXPECTED VALUE: \b(s[1-5])\b
+     ```
 
   Then the command was not used in the correct form (e.g. !wr s1)
 
